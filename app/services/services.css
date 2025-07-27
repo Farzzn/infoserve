@@ -1,0 +1,91 @@
+/* File: app/services/services.css */
+
+.page-container {
+  padding: 20px 0;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro-paragraph, .closing-paragraph {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
+.services-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.service-dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.service-dropdown {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s;
+}
+
+.service-dropdown:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.service-dropdown summary {
+  padding: 18px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  background-color: #ffffff;
+  cursor: pointer;
+  list-style: none; /* Remove default marker */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.service-dropdown summary:hover {
+  background-color: #f9f9f9;
+}
+
+/* Custom dropdown arrow */
+.service-dropdown summary::after {
+  content: '▼';
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  transform: rotate(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-dropdown[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.service-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fdfdfd;
+}
+
+.service-dropdown li {
+  padding: 15px 25px;
+  border-top: 1px solid #eee;
+  color: #555;
+  font-size: 1.1rem;
+}
