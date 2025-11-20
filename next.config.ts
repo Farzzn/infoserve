@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Add this line
-  output: 'export',
 
   // If you are using the Next.js <Image> component, you might need this
   images: {
