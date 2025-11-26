@@ -23,7 +23,7 @@ export default function RootLayout({
       <body>
         <header className="site-header">
           <div className="container">
-            <h1 className="logo">InfoServe CSC Karathode</h1>
+            <h1 className="logo">InfoServe CSC</h1>
             <nav className="main-nav">
               <ul>
                 <li><Link href="/">Home</Link></li>
